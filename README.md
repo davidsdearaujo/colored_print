@@ -47,7 +47,7 @@ ColoredPrint.log("Custom Log Message");
 ColoredPrint.log(
   "Custom Message",
   tag: "WALLACE", //Optional parameter. Default: "LOG"
-  messageColor: PrintColor.white, //Optional parameter. Default: PrintColor.white
+  messageColor: PrintColor.white, //Optional parameter. Default: PrintColor.yellow
   tagColor: PrintColor.grey, //Optional parameter. Default: PrintColor.grey
 );
 ```

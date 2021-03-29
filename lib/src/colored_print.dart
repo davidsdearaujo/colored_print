@@ -9,7 +9,7 @@ class ColoredPrint {
     String message, {
     String tag = "LOG",
     PrintColor tagColor = PrintColor.grey,
-    PrintColor messageColor = PrintColor.white,
+    PrintColor messageColor = PrintColor.yellow,
   }) {
     var content = "";
     if (tag.isNotEmpty) content += tagColor("[$tag] ");
