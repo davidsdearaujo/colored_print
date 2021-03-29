@@ -17,7 +17,7 @@ dependency:
 ```dart
 import 'package:colored_print/colored_print.dart';
 
-print(PrintColor.magenta("Magenta Color") + " and " + PrintColor.yellow("Yellow Color"));
+print('${PrintColor.magenta('Magenta Color')} and ${PrintColor.yellow('Yellow Color')}');
 ```
 **Result:**
 
