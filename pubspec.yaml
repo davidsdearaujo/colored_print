@@ -1,0 +1,8 @@
+name: colored_print
+description: This package makes it possible to use colored prints.
+version: 0.0.1
+homepage: https://github.com/davidsdearaujo/colored_print
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+dependencies:
+  ansicolor: 2.0.1
