@@ -1,22 +1,17 @@
-import 'package:ansicolor/ansicolor.dart';
+class PrintColor {
+  final String colorMarker;
+  static const String resetColorMarker = '\x1B[0m';
 
-enum PrintColor { red, green, white, blue, yellow, grey, cyan, magenta }
+  const PrintColor._(this.colorMarker);
+  static const red = PrintColor._('\x1B[31m');
+  static const green = PrintColor._('\x1B[32m');
+  static const white = PrintColor._('\x1B[37m');
+  static const yellow = PrintColor._('\x1B[33m');
+  static const black = PrintColor._('\x1B[30m');
+  static const grey = PrintColor._('\x1B[30m');
+  static const blue = PrintColor._('\x1B[34m');
+  static const cyan = PrintColor._('\x1B[36m');
+  static const magenta = PrintColor._('\x1B[35m');
 
-extension PrintColorExtension on PrintColor {
-  static final _ansiPens = <PrintColor, AnsiPen>{
-    PrintColor.red: AnsiPen()..red(bold: true),
-    PrintColor.green: AnsiPen()..green(bold: true),
-    PrintColor.white: AnsiPen()..white(bold: true),
-    PrintColor.yellow: AnsiPen()..yellow(bold: true),
-    PrintColor.grey: AnsiPen()..black(bold: true),
-    PrintColor.blue: AnsiPen()..blue(bold: true),
-    PrintColor.cyan: AnsiPen()..cyan(bold: true),
-    PrintColor.magenta: AnsiPen()..magenta(bold: true),
-  };
-  //ignore: unused_element
-  String call(String text) {
-    var pen = _ansiPens[this];
-    if (pen == null) pen = AnsiPen()..white(bold: true);
-    return pen.call(text);
-  }
+  String call(String text) => '$colorMarker$text$resetColorMarker';
 }
