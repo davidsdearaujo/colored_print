@@ -43,12 +43,12 @@ ColoredPrint.success("Success Message");
 // For logs (default)
 ColoredPrint.log("Custom Log Message");
 
-//For logs using custom tag and custom colors
+// For logs using custom tag and custom colors
 ColoredPrint.log(
   "Custom Message",
-  tag: "WALLACE", //Optional parameter. Default: "LOG"
-  messageColor: PrintColor.white, //Optional parameter. Default: PrintColor.yellow
-  tagColor: PrintColor.grey, //Optional parameter. Default: PrintColor.grey
+  tag: "WALLACE", // Optional parameter. Default: "LOG"
+  messageColor: PrintColor.white, // Optional parameter. Default: PrintColor.yellow
+  tagColor: PrintColor.grey, // Optional parameter. Default: PrintColor.grey
 );
 ```
 
