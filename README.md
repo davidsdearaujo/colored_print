@@ -28,19 +28,19 @@ To facilitate its use, the auxiliary class `ColoredPrint` was created:
 ```dart
 import 'package:colored_print/colored_print.dart';
 
-//For single color line
+// For single color line
 ColoredPrint.show("Single Color Message", messageColor: PrintColor.cyan);
 
-//For warning messages
+// For warning messages
 ColoredPrint.warning("Warning Message");
 
-//For error messages
+// For error messages
 ColoredPrint.error("Error Message");
 
-//For success messages
+// For success messages
 ColoredPrint.success("Success Message");
 
-//For logs (default)
+// For logs (default)
 ColoredPrint.log("Custom Log Message");
 
 //For logs using custom tag and custom colors
